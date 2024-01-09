@@ -87,6 +87,11 @@ nav ul li{
     transition: opacity 0.4s ease-in;
 }
 
+.songInfo span{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
 #songName{
     opacity: 0;
     transition: opacity 0.4s ease-in;
