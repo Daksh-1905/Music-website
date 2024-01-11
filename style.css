@@ -14,6 +14,29 @@ nav{
     font-family: 'Ubuntu', sans-serif;
 }
 
+#navigation-button-1{
+    color: white;
+    border-radius: 34px;
+    margin-right: 12px;
+}
+
+#navigation-button-2{
+    color: white;
+    border-radius: 34px;
+}
+
+#navigation-button-1:hover{
+    transition: all 0.15s ease-in;
+    color: black;
+    background-color: white;
+}
+
+#navigation-button-2:hover{
+    transition: all 0.15s ease-in;
+    color: black;
+    background-color: white;
+}
+
 nav ul{
     display: flex;
     align-items: center;
@@ -48,11 +71,16 @@ nav ul li{
     font-family: 'Varela Round', sans-serif;
     display: flex;
     margin: 23px auto;
-    width: 70%;
+    width: 80%;
     border-radius: 12px;
     padding: 34px;
     background-image: url('covers/bg (2).jpg');
     background-size: cover;
+}
+
+.gifPlay{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
 }
 
 .bottom{
@@ -92,6 +120,18 @@ nav ul li{
     transition: opacity 0.4s ease-in;
 }
 
+.songTime{
+    position: absolute;
+    right: 10vw;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+.songTime span{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
 #songName{
     opacity: 0;
     transition: opacity 0.4s ease-in;
@@ -104,6 +144,24 @@ nav ul li{
 
 .songItemContainer{
     margin-top: 64px;
+}
+
+.songItemContainer button{
+    margin-left: 610px;
+    cursor: pointer;
+    padding: 5px 13px;
+    width: 10%;
+    background-color: black;
+    color: white;
+    border-color: white;
+    border-radius: 8px;
+}
+
+.songItemContainer button:hover{
+    transition: all 0.15s ease-in;
+    color: black;
+    background-color: white;
+    font-weight: bold;
 }
 
 .songItem{

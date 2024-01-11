@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify - Web Player: Music for everyone</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png" href="covers/logo.png">
 </head>
 <body>
     <nav>
         <ul>
             <li class="brand"><img src="covers/Spotify_App_Logo.svg.png" alt="Spotify">Spotify</li>
-            <li>Home</li>
-            <li>About</li>
+            <li id="navigation-button-1">Home</li>
+            <li id="navigation-button-2">About</li>
         </ul>
     </nav>
 
@@ -19,64 +20,65 @@
         <div class="songList">
             <h1>Best of NCS-No Copyright Sounds</h1>
             <div class="songItemContainer">
+                <button type="button" id="shuffle-button">Shuffle</button>
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let Me Love You</span>
-                    <span class="songListPlay"><span class="timeStamp">05:34 <i id="0" class="far songItemPlay fa-play-circle"></i></span></span>
+                    <span class="songListPlay"><span class="timeStamp"><img src="covers/playing.gif" alt="" class="gifPlay"> 05:09 <i id="0" class="far songItemPlay fa-play-circle"></i></span></span>
                 </div>
 
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let Me Love You</span>
-                    <span class="songListPlay"><span class="timeStamp">05:34 <i id="1" class="far songItemPlay fa-play-circle"></i></span></span>
+                    <span class="songListPlay"><span class="timeStamp"><img src="covers/playing.gif" alt="" class="gifPlay"> 04:40 <i id="1" class="far songItemPlay fa-play-circle"></i></span></span>
                 </div>
 
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let Me Love You</span>
-                    <span class="songListPlay"><span class="timeStamp">05:34 <i id="2" class="far songItemPlay fa-play-circle"></i></span></span>
+                    <span class="songListPlay"><span class="timeStamp"><img src="covers/playing.gif" alt="" class="gifPlay"> 05:22 <i id="2" class="far songItemPlay fa-play-circle"></i></span></span>
                 </div>
 
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let Me Love You</span>
-                    <span class="songListPlay"><span class="timeStamp">05:34 <i id="3" class="far songItemPlay fa-play-circle"></i></span></span>
+                    <span class="songListPlay"><span class="timeStamp"><img src="covers/playing.gif" alt="" class="gifPlay"> 05:23 <i id="3" class="far songItemPlay fa-play-circle"></i></span></span>
                 </div>
 
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let Me Love You</span>
-                    <span class="songListPlay"><span class="timeStamp">05:34 <i id="4" class="far songItemPlay fa-play-circle"></i></span></span>
+                    <span class="songListPlay"><span class="timeStamp"><img src="covers/playing.gif" alt="" class="gifPlay"> 03:14 <i id="4" class="far songItemPlay fa-play-circle"></i></span></span>
                 </div>
 
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let Me Love You</span>
-                    <span class="songListPlay"><span class="timeStamp">05:34 <i id="5" class="far songItemPlay fa-play-circle"></i></span></span>
+                    <span class="songListPlay"><span class="timeStamp"><img src="covers/playing.gif" alt="" class="gifPlay"> 03:03 <i id="5" class="far songItemPlay fa-play-circle"></i></span></span>
                 </div>
 
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let Me Love You</span>
-                    <span class="songListPlay"><span class="timeStamp">05:34 <i id="6" class="far songItemPlay fa-play-circle"></i></span></span>
+                    <span class="songListPlay"><span class="timeStamp"><img src="covers/playing.gif" alt="" class="gifPlay"> 03:01 <i id="6" class="far songItemPlay fa-play-circle"></i></span></span>
                 </div>
 
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let Me Love You</span>
-                    <span class="songListPlay"><span class="timeStamp">05:34 <i id="7" class="far songItemPlay fa-play-circle"></i></span></span>
+                    <span class="songListPlay"><span class="timeStamp"><img src="covers/playing.gif" alt="" class="gifPlay"> 05:27 <i id="7" class="far songItemPlay fa-play-circle"></i></span></span>
                 </div>
 
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let Me Love You</span>
-                    <span class="songListPlay"><span class="timeStamp">05:34 <i id="8" class="far songItemPlay fa-play-circle"></i></span></span>
+                    <span class="songListPlay"><span class="timeStamp"><img src="covers/playing.gif" alt="" class="gifPlay"> 03:54 <i id="8" class="far songItemPlay fa-play-circle"></i></span></span>
                 </div>
 
                 <div class="songItem">
                     <img alt="1">
                     <span class="songName">Let Me Love You</span>
-                    <span class="songListPlay"><span class="timeStamp">05:34 <i id="9" class="far songItemPlay fa-play-circle"></i></span></span>
+                    <span class="songListPlay"><span class="timeStamp"><img src="covers/playing.gif" alt="" class="gifPlay"> 04:09 <i id="9" class="far songItemPlay fa-play-circle"></i></span></span>
                 </div>
 
             </div>
@@ -93,8 +95,12 @@
         </div>
 
         <div class="songInfo">
-            <img src="covers/playing.gif" alt="" id="gif">
-            <span id="masterSongName">Warriyo - Mortals [NCS Release]</span>
+            <img src="covers/playing.gif" alt="" class="gifPlay" id="gif">
+            <span id="masterSongName"></span>
+        </div>
+
+        <div class="songTime">
+            <span id="songTimeUpdate"></span>
         </div>
 
     </div>
